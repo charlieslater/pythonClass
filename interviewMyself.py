@@ -1,7 +1,7 @@
 import sys
 
 def getline(prompt):
-    if int(sys.version_info.major) >= 3:
+    if sys.version_info.major >= 3:
         input_str = input(prompt)
     else:
         input_str = raw_input(prompt)
@@ -17,6 +17,7 @@ def input_loop(prompt):
             print("\ninterview ended early")
             exit(0)
 
+print("You seem to be running Python version %d" % sys.version_info.major)
 answer = input_loop("Are you interested in programming? ")
 if answer.lower().find("y") < 0:
     print("I'll take that as a 'no'")
