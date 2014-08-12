@@ -1,0 +1,7 @@
+The file, sample.txt is a excerpt from "Mule Bone", a play by
+Langston Hughes.  The goal of this probem is to count unique words.
+To make it easier, I have removed punctuation and converted all
+letters to lowercase.  Compute the following:
+
+1. The number of unique words in the file
+2. The number of times each word appears in the file
